@@ -378,3 +378,133 @@ nav {
     }
   }
 }
+
+.page.four {
+  // display: none;
+  .summary {
+    width: 100%;
+    background-color: $Alabaster;
+    border-radius: 8px;
+    padding: 20px;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $Light-gray;
+      margin-bottom: 20px;
+
+      .selected-plan {
+        font-weight: 800;
+        color: $Marine-blue;
+        margin-bottom: 3px;
+      }
+
+      a {
+        all: unset;
+        color: $Cool-gray;
+        font-weight: 400;
+        font-size: 14px;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      .summary-price {
+        font-size: 18px;
+        color: $Marine-blue;
+        font-weight: 800;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .selected-add-on {
+        color: $Cool-gray;
+      }
+
+      &.one {
+        margin-bottom: 20px;
+      }
+
+      .add-on-price {
+        color: $Marine-blue;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .p-total {
+      font-weight: 500;
+      color: $Cool-gray;
+    }
+
+    .total-price {
+      font-weight: 800;
+      font-size: 20px;
+      color: $Purplish-blue;
+    }
+  }
+  &.show {
+    display: none;
+  }
+
+  button.next {
+    all: unset;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background-color: $Marine-blue;
+    color: white;
+
+    &:hover {
+      filter: brightness(1.5);
+      cursor: pointer;
+    }
+  }
+}
+
+.thank-you-container {
+  width: 70%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .img-cont {
+    background-image: url("https://www.iconbolt.com/iconsets/essential-flat/check.svg");
+    height: 80px;
+    width: 80px;
+  }
+
+  h1 {
+    color: $Marine-blue;
+  }
+
+  p {
+    width: 80%;
+    text-align: center;
+    color: $Cool-gray;
+    line-height: 20px;
+  }
+  &.show {
+    display: flex;
+  }
+}

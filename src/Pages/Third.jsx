@@ -28,7 +28,6 @@ const Third = () => {
           className={`checkbox-opt one ${checkedState.boxOne ? "checked" : ""}`}
         >
           <input
-          className="input-checkbox"
             type="checkbox"
             id="boxOne"
             checked={checkedState.boxOne}
@@ -46,7 +45,6 @@ const Third = () => {
           className={`checkbox-opt two ${checkedState.boxTwo ? "checked" : ""}`}
         >
           <input
-          className="input-checkbox"
             type="checkbox"
             id="boxTwo"
             checked={checkedState.boxTwo}
@@ -66,7 +64,6 @@ const Third = () => {
           }`}
         >
           <input
-          className="input-checkbox"
             type="checkbox"
             id="boxThree"
             checked={checkedState.boxThree}
