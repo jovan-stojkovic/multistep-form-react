@@ -20,7 +20,7 @@ const First = () => {
       </form>
 
       <div className="nav-buttons one">
-        <Link to="/two" className="next">
+        <Link to="/two" className="next" >
           Next Step
         </Link>
       </div>
