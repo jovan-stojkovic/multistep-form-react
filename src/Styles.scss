@@ -101,36 +101,6 @@ nav {
   .desc {
     color: $Cool-gray;
   }
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  label {
-    color: $Marine-blue;
-    margin-bottom: 5px;
-  }
-  input {
-    all: unset;
-    height: 40px;
-    width: calc(100% - 30px);
-    border-radius: 8px;
-    border: 2px solid $Light-gray;
-    margin-bottom: 20px;
-    padding: 0 15px;
-    color: $Marine-blue;
-    font-weight: 700;
-
-    &::placeholder {
-      color: $Cool-gray;
-      font-weight: 500;
-    }
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
 
   .nav-buttons {
     display: flex;
@@ -169,14 +139,44 @@ nav {
           cursor: pointer;
         }
       }
-
-      
     }
   }
 }
 
-.page.two {
+.page.one {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    color: $Marine-blue;
+    margin-bottom: 5px;
+  }
+  input {
+    all: unset;
+    height: 40px;
+    width: calc(100% - 30px);
+    border-radius: 8px;
+    border: 2px solid $Light-gray;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    color: $Marine-blue;
+    font-weight: 700;
 
+    &::placeholder {
+      color: $Cool-gray;
+      font-weight: 500;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.page.two {
   p.desc {
     margin-bottom: 30px;
   }
@@ -322,5 +322,59 @@ nav {
       }
     }
   }
+}
 
+.page.three {
+  .checkboxes-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .checkbox-opt {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+      border: $Cool-gray 2px solid;
+      padding: 13px 20px;
+
+      &.checked {
+        background-color: $Alabaster;
+        border: $Purplish-blue 2px solid;
+      }
+
+      input {
+        height: 20px;
+        width: 20px;
+        margin-right: 30px;
+        cursor: pointer;
+
+        &:checked {
+          background-color: purple;
+        }
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        cursor: pointer;
+
+        p.label {
+          font-weight: 700;
+          color: $Marine-blue;
+          margin-bottom: 3px;
+        }
+        p.label-desc {
+          color: $Cool-gray;
+          font-size: 14px;
+        }
+      }
+      p.price {
+        color: $Purplish-blue;
+        font-weight: 500;
+      }
+    }
+  }
 }
